@@ -1,0 +1,33 @@
+{
+    "train": {
+        "roc_auc": 0.810581878806103,
+        "pr_auc": 0.5920912443306617,
+        "accuracy": 0.8402865163101345,
+        "sober_accuracy": 0.9651592202445817,
+        "drunk_accuracy": 0.3425434362934363,
+        "f1": 0.4624531682684476,
+        "threshold": 0.21000000000000002
+    },
+    "test": {
+        "roc_auc": 0.7733791302746501,
+        "pr_auc": 0.7460678347843219,
+        "accuracy": 0.7870136432541688,
+        "sober_accuracy": 0.9611378205128205,
+        "drunk_accuracy": 0.4897400820793434,
+        "f1": 0.6294505494505495,
+        "threshold": 0.21000000000000002
+    },
+    "config": {
+        "device": "mps",
+        "window_size": 800,
+        "batch_size": 128,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "epochs": 8,
+        "patience": 8,
+        "overlap_ratio": 0.5,
+        "num_filters": 32,
+        "pooling": "avg",
+        "runtime_log_fld": "results/1D-CNN_DATA_AUGMENTATION/20250528_193914"
+    }
+}

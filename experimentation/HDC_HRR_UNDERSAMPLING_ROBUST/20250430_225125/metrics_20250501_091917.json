@@ -1,0 +1,33 @@
+{
+    "train": {
+        "roc_auc": 0.6114429167052663,
+        "pr_auc": 0.23938649051362504,
+        "accuracy": 0.8210035570434692,
+        "sober_accuracy": 0.1241747613641142,
+        "drunk_accuracy": 0.9493089698424374,
+        "f1": 0.17745861001772784,
+        "threshold": 0.9
+    },
+    "test": {
+        "roc_auc": 0.6956938627489475,
+        "pr_auc": 0.6333083688383314,
+        "accuracy": 0.6930267812026276,
+        "sober_accuracy": 0.2682432432432432,
+        "drunk_accuracy": 0.9467312348668281,
+        "f1": 0.39522150323544053,
+        "threshold": 0.9
+    },
+    "config": {
+        "device": "mps",
+        "window_size": 800,
+        "ngrams": 7,
+        "hdc_dimension": 5000,
+        "batch_size": 64,
+        "learning_rate": 2,
+        "epochs": 3,
+        "patience": 3,
+        "overlap_ratio": 0.5,
+        "vsa_type": "HRR",
+        "runtime_log_fld": "results/HDC_HRR_UNDERSAMPLING_ROBUST/20250430_225125"
+    }
+}

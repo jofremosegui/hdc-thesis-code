@@ -1,0 +1,22 @@
+{
+  "roc_auc": 0.7634465730864035,
+  "accuracy": 0.7167761495704902,
+  "f1_score": 0.6231932773109243,
+  "confusion_matrix": [
+    [
+      1910,
+      568
+    ],
+    [
+      553,
+      927
+    ]
+  ],
+  "best_params": {
+    "colsample_bytree": 1.0,
+    "learning_rate": 0.1,
+    "max_depth": 7,
+    "n_estimators": 200,
+    "subsample": 0.8
+  }
+}

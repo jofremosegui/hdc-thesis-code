@@ -1,0 +1,30 @@
+{
+    "train": {
+        "roc_auc": 0.8058812951198802,
+        "pr_auc": 0.7073294417120963,
+        "accuracy": 0.7778587808013997,
+        "sober_accuracy": 0.4153315672175266,
+        "drunk_accuracy": 0.9447369439820371,
+        "f1": 0.5410127899652178,
+        "threshold": 0.49
+    },
+    "test": {
+        "roc_auc": 0.7123981578430731,
+        "pr_auc": 0.7020384330732392,
+        "accuracy": 0.786255684689237,
+        "sober_accuracy": 0.9132364810330912,
+        "drunk_accuracy": 0.5736486486486486,
+        "f1": 0.6674528301886793,
+        "threshold": 0.49
+    },
+    "config": {
+        "device": "cpu",
+        "hdc_dimension": 5000,
+        "overlap_ratio": 0.5,
+        "runtime_log_fld": "results/HDC_HYBRID_SVM_CROSSVAL/20250512_200553",
+        "window_size": 800,
+        "ngrams": 7,
+        "svm_c": 0.1,
+        "svm_gamma": "scale"
+    }
+}

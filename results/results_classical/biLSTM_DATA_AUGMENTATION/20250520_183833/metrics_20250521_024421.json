@@ -1,0 +1,33 @@
+{
+    "train": {
+        "roc_auc": 0.7888215118541269,
+        "pr_auc": 0.5764786453598074,
+        "accuracy": 0.8409519891588423,
+        "sober_accuracy": 0.9775699237195786,
+        "drunk_accuracy": 0.2963923745173745,
+        "f1": 0.42775673675503895,
+        "threshold": 0.5700000000000001
+    },
+    "test": {
+        "roc_auc": 0.6850133948928409,
+        "pr_auc": 0.6815718617451967,
+        "accuracy": 0.7680646791308742,
+        "sober_accuracy": 0.9723557692307693,
+        "drunk_accuracy": 0.41928864569083446,
+        "f1": 0.5718283582089553,
+        "threshold": 0.5700000000000001
+    },
+    "config": {
+        "device": "mps",
+        "window_size": 800,
+        "hidden_size": 128,
+        "num_layers": 1,
+        "batch_size": 128,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "epochs": 4,
+        "patience": 4,
+        "overlap_ratio": 0.5,
+        "runtime_log_fld": "results/biLSTM_DATA_AUGMENTATION/20250520_183833"
+    }
+}

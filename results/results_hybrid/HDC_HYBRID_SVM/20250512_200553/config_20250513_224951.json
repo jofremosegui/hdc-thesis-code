@@ -1,0 +1,10 @@
+{
+    "device": "cpu",
+    "hdc_dimension": 5000,
+    "overlap_ratio": 0.5,
+    "runtime_log_fld": "results/HDC_HYBRID_SVM_CROSSVAL/20250512_200553",
+    "window_size": 800,
+    "ngrams": 7,
+    "svm_c": 0.1,
+    "svm_gamma": "scale"
+}

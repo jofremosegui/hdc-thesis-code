@@ -1,0 +1,13 @@
+{
+    "device": "mps",
+    "window_size": 800,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "batch_size": 128,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "epochs": 4,
+    "patience": 4,
+    "overlap_ratio": 0.5,
+    "runtime_log_fld": "results/LSTM_DATA_AUGMENTATION/20250601_124653"
+}

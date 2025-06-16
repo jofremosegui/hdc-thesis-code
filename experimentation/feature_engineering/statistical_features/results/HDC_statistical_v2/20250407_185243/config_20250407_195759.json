@@ -1,0 +1,12 @@
+{
+    "device": "mps",
+    "window_size": 1,
+    "ngrams": 7,
+    "hdc_dimension": 5000,
+    "batch_size": 64,
+    "learning_rate": 2,
+    "epochs": 10,
+    "patience": 10,
+    "overlap_ratio": 0.5,
+    "runtime_log_fld": "results/HDC_statistical_v2/20250407_185243"
+}

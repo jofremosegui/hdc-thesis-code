@@ -1,0 +1,13 @@
+{
+    "device": "mps",
+    "window_size": 800,
+    "batch_size": 128,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "epochs": 8,
+    "patience": 8,
+    "overlap_ratio": 0.5,
+    "num_filters": 32,
+    "pooling": "avg",
+    "runtime_log_fld": "results/1D-CNN_DATA_AUGMENTATION/20250528_193914"
+}

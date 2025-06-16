@@ -1,0 +1,33 @@
+{
+    "train": {
+        "roc_auc": 0.8047434308530158,
+        "pr_auc": 0.5902686517381805,
+        "accuracy": 0.37496370148097957,
+        "sober_accuracy": 0.22843261896113332,
+        "drunk_accuracy": 0.9590371621621622,
+        "f1": 0.38098547668120597,
+        "threshold": 0.06999999999999999
+    },
+    "test": {
+        "roc_auc": 0.6903814913711459,
+        "pr_auc": 0.6860048322935843,
+        "accuracy": 0.3858009095502779,
+        "sober_accuracy": 0.030048076923076924,
+        "drunk_accuracy": 0.9931600547195623,
+        "f1": 0.5443298969072164,
+        "threshold": 0.06999999999999999
+    },
+    "config": {
+        "device": "mps",
+        "window_size": 800,
+        "hidden_size": 64,
+        "num_layers": 1,
+        "batch_size": 128,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "epochs": 3,
+        "patience": 3,
+        "overlap_ratio": 0.5,
+        "runtime_log_fld": "results/GRU_DATA_AUGMENTATION/20250529_104952"
+    }
+}

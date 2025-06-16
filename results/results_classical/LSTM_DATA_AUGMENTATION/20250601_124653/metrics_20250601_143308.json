@@ -1,0 +1,33 @@
+{
+    "train": {
+        "roc_auc": 0.7820577162612414,
+        "pr_auc": 0.56104317767922,
+        "accuracy": 0.838362694802052,
+        "sober_accuracy": 0.9586814384308028,
+        "drunk_accuracy": 0.35877171814671815,
+        "f1": 0.47099354532134796,
+        "threshold": 0.5
+    },
+    "test": {
+        "roc_auc": 0.6913478802746501,
+        "pr_auc": 0.6740986174346006,
+        "accuracy": 0.7660434562910561,
+        "sober_accuracy": 0.9194711538461539,
+        "drunk_accuracy": 0.5041039671682627,
+        "f1": 0.6141666666666666,
+        "threshold": 0.5
+    },
+    "config": {
+        "device": "mps",
+        "window_size": 800,
+        "hidden_size": 64,
+        "num_layers": 2,
+        "batch_size": 128,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "epochs": 4,
+        "patience": 4,
+        "overlap_ratio": 0.5,
+        "runtime_log_fld": "results/LSTM_DATA_AUGMENTATION/20250601_124653"
+    }
+}
