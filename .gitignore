@@ -15,6 +15,5 @@ __pycache__/
 
 # Ignore model weights and training artifacts
 *.pt
-*.json
 *.txt
 # Updated ignore list
