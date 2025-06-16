@@ -1,0 +1,29 @@
+2025-05-03 09:48:28,299 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced_UNDERSAMPLING_FHRR/20250503_094828/training.log
+2025-05-03 09:48:28,299 - INFO - PRINT: Total configurations: 1
+2025-05-03 09:48:38,360 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-05-03 09:48:38,360 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'vsa': 'FHRR', 'runtime_log_fld': 'results/HDC_balanced_UNDERSAMPLING_FHRR/20250503_094828'}
+
+2025-05-03 09:48:38,360 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-03 09:48:38,360 - INFO - PRINT: FOLD: 1
+2025-05-03 09:48:38,360 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-05-03 09:48:38,360 - INFO - PRINT: VAL: [11, 6]
+2025-05-03 09:48:40,070 - INFO - PRINT: Preparing sequences...
+2025-05-03 09:48:41,317 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-03 09:48:45,964 - INFO - PRINT: Balancing sequences via undersampling...
+2025-05-03 09:48:48,968 - INFO - PRINT: Undersampled sequence shape: (70055, 800, 7)
+2025-05-03 09:48:49,168 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-03 09:48:49,479 - INFO - PRINT: Balancing sequences via undersampling...
+2025-05-03 09:48:49,685 - INFO - PRINT: Undersampled sequence shape: (5388, 800, 7)
+2025-05-03 09:48:50,291 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-05-03 09:48:50,331 - INFO - PRINT: Users in test:{11, 6}
+2025-05-03 09:48:50,331 - INFO - PRINT: Number of windows for training:70055
+2025-05-03 09:48:50,331 - INFO - PRINT: Number of windows for testing:5388
+2025-05-03 09:48:50,811 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-03 09:48:50,811 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-03 09:51:11,754 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-05-03 09:51:11,754 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-05-03 09:51:11,754 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py
+2025-05-03 09:51:11,764 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py

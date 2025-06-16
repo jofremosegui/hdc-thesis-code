@@ -1,0 +1,19 @@
+2025-04-22 11:06:19,806 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced_UNDERSAMPLING_TWEAKED_BALANCED/20250422_110619/training.log
+2025-04-22 11:06:19,806 - INFO - PRINT: Total configurations: 1
+2025-04-22 11:06:43,569 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-22 11:06:43,570 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced_UNDERSAMPLING_TWEAKED_BALANCED/20250422_110619'}
+
+2025-04-22 11:06:43,570 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-22 11:06:43,570 - INFO - PRINT: FOLD: 1
+2025-04-22 11:06:43,570 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-22 11:06:43,570 - INFO - PRINT: VAL: [11, 6]
+2025-04-22 11:06:45,144 - INFO - PRINT: Preparing sequences...
+2025-04-22 11:06:46,407 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-22 11:06:51,062 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-22 11:09:22,910 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-04-22 11:09:22,910 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-04-22 11:09:22,910 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py
+2025-04-22 11:09:22,919 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py

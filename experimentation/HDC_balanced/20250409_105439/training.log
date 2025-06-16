@@ -1,0 +1,17 @@
+2025-04-09 10:54:39,234 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced/20250409_105439/training.log
+2025-04-09 10:54:39,234 - INFO - PRINT: Total configurations: 1
+2025-04-09 10:54:56,677 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-09 10:54:56,678 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced/20250409_105439'}
+
+2025-04-09 10:54:56,678 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-09 10:54:56,678 - INFO - PRINT: FOLD: 1
+2025-04-09 10:54:56,678 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-09 10:54:56,678 - INFO - PRINT: VAL: [11, 6]
+2025-04-09 10:54:58,007 - INFO - PRINT: Preparing sequences...
+2025-04-09 10:54:59,249 - INFO - PRINT: Preparing balanced sequences...
+2025-04-09 10:57:36,257 - INFO - PRINT: /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/torchhd/__init__.py
+2025-04-09 10:57:36,258 - INFO - PRINT: /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/torchhd/embeddings.py
+2025-04-09 10:57:36,258 - INFO - PRINT: /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/torchhd/models.py

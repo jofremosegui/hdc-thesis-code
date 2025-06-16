@@ -1,0 +1,5 @@
+2025-04-07 13:52:30,995 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/feature_engineering/statistical_features/results/HDC_statistical_v2/20250407_135230/training.log
+2025-04-07 13:52:30,995 - INFO - PRINT: Total configurations: 1
+2025-04-07 13:54:28,673 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-04-07 13:54:28,673 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-04-07 13:54:28,673 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py

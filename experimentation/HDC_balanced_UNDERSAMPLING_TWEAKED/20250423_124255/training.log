@@ -1,0 +1,30 @@
+2025-04-23 12:42:55,662 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250423_124255/training.log
+2025-04-23 12:42:55,662 - INFO - PRINT: Total configurations: 1
+2025-04-23 12:43:20,789 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-23 12:43:20,790 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250423_124255'}
+
+2025-04-23 12:43:20,790 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-23 12:43:20,790 - INFO - PRINT: FOLD: 1
+2025-04-23 12:43:20,790 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-23 12:43:20,790 - INFO - PRINT: VAL: [11, 6]
+2025-04-23 12:43:22,589 - INFO - PRINT: Preparing sequences...
+2025-04-23 12:43:23,872 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-23 12:43:28,644 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-23 12:43:32,442 - INFO - PRINT: Undersampled sequence shape: (70055, 800, 7)
+2025-04-23 12:43:32,632 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-23 12:43:32,933 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-23 12:43:33,127 - INFO - PRINT: Undersampled sequence shape: (5388, 800, 7)
+2025-04-23 12:43:33,733 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-04-23 12:43:33,772 - INFO - PRINT: Users in test:{11, 6}
+2025-04-23 12:43:33,772 - INFO - PRINT: Number of windows for training:70055
+2025-04-23 12:43:33,772 - INFO - PRINT: Number of windows for testing:5388
+2025-04-23 12:43:34,010 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-23 12:43:34,010 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-04-23 12:56:10,713 - INFO - PRINT:     1 | 0.686026 | 0.428246 | 0.9621 | 0.8263 | 733.77
+2025-04-23 13:06:56,080 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-04-23 13:06:56,081 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-04-23 13:06:56,081 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py
+2025-04-23 13:06:56,093 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py

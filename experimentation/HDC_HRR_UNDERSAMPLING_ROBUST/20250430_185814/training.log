@@ -1,0 +1,31 @@
+2025-04-30 18:58:14,941 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_HRR_UNDERSAMPLING_ROBUST/20250430_185814/training.log
+2025-04-30 18:58:14,941 - INFO - PRINT: Total configurations: 1
+2025-04-30 18:58:36,284 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-30 18:58:36,284 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'vsa_type': 'HRR', 'runtime_log_fld': 'results/HDC_HRR_UNDERSAMPLING_ROBUST/20250430_185814'}
+
+2025-04-30 18:58:36,284 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-30 18:58:36,284 - INFO - PRINT: FOLD: 1
+2025-04-30 18:58:36,284 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-30 18:58:36,284 - INFO - PRINT: VAL: [11, 6]
+2025-04-30 18:58:38,007 - INFO - PRINT: Preparing sequences...
+2025-04-30 18:58:39,270 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-30 18:58:44,159 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-30 18:58:51,864 - INFO - PRINT: Undersampled sequence shape: (140729, 800, 7)
+2025-04-30 18:58:52,172 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-30 18:58:52,494 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-30 18:58:52,873 - INFO - PRINT: Undersampled sequence shape: (12207, 800, 7)
+2025-04-30 18:58:53,490 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-04-30 18:58:53,528 - INFO - PRINT: Users in test:{11, 6}
+2025-04-30 18:58:53,528 - INFO - PRINT: Number of windows for training:140729
+2025-04-30 18:58:53,528 - INFO - PRINT: Number of windows for testing:12207
+2025-04-30 18:58:53,693 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-30 18:58:53,693 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-04-30 19:23:00,204 - INFO - PRINT:     1 | 0.537978 | 0.712956 | 0.0602 | 0.4624 | 1398.01
+2025-04-30 19:46:54,452 - INFO - PRINT:     2 | 0.541570 | 0.736834 | 0.0595 | 0.4561 | 1378.17
+2025-04-30 19:59:07,094 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-04-30 19:59:07,094 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-04-30 19:59:07,095 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py
+2025-04-30 19:59:07,105 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py

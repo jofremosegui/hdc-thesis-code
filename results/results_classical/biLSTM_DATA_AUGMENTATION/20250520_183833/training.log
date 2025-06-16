@@ -1,0 +1,300 @@
+2025-05-20 18:38:33,905 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/biLSTM_DATA_AUGMENTATION/20250520_183833/training.log
+2025-05-20 18:38:33,905 - INFO - PRINT: Total configurations: 3
+2025-05-20 18:38:54,713 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-05-20 18:38:54,713 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'hidden_size': 128, 'num_layers': 1, 'batch_size': 128, 'dropout': 0.1, 'learning_rate': 0.001, 'epochs': 100, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/biLSTM_DATA_AUGMENTATION/20250520_183833'}
+
+2025-05-20 18:38:54,713 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-20 18:38:54,713 - INFO - PRINT: FOLD: 1
+2025-05-20 18:38:54,713 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-05-20 18:38:54,713 - INFO - PRINT: VAL: [11, 6]
+2025-05-20 18:38:56,266 - INFO - PRINT: Preparing sequences...
+2025-05-20 18:38:56,266 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-20 18:39:08,125 - INFO - PRINT: Starting sequence preparation...
+2025-05-20 18:39:08,155 - INFO - PRINT: Processing 5 sessions...
+2025-05-20 18:39:08,458 - INFO - PRINT: Created 3115 sequences
+2025-05-20 18:39:08,458 - INFO - PRINT: Sequences shape: (3115, 800, 7)
+2025-05-20 18:39:09,082 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-05-20 18:39:09,122 - INFO - PRINT: Users in test:{11, 6}
+2025-05-20 18:39:09,122 - INFO - PRINT: Number of windows for training:76787
+2025-05-20 18:39:09,122 - INFO - PRINT: Number of windows for testing:3115
+2025-05-20 18:39:09,134 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-20 18:39:09,134 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-20 18:40:01,920 - INFO - PRINT:     1 | 0.452333 | 0.330970 | 0.2035 | 0.7155 | 51.95
+2025-05-20 18:40:53,998 - INFO - PRINT:     2 | 0.428870 | 0.351743 | 0.2127 | 0.7167 | 51.23
+2025-05-20 18:41:46,223 - INFO - PRINT:     3 | 0.420768 | 0.356627 | 0.2116 | 0.6954 | 51.40
+2025-05-20 18:42:38,681 - INFO - PRINT:     4 | 0.413867 | 0.336687 | 0.2179 | 0.7198 | 51.64
+2025-05-20 18:43:31,163 - INFO - PRINT:     5 | 0.407448 | 0.362467 | 0.2132 | 0.7133 | 51.66
+2025-05-20 18:44:23,456 - INFO - PRINT:     6 | 0.391379 | 0.381567 | 0.2082 | 0.7139 | 51.47
+2025-05-20 18:45:16,152 - INFO - PRINT:     7 | 0.374735 | 0.378538 | 0.1962 | 0.6864 | 51.88
+2025-05-20 18:46:08,896 - INFO - PRINT:     8 | 0.365172 | 0.349349 | 0.2019 | 0.7083 | 51.92
+2025-05-20 18:47:01,653 - INFO - PRINT:     9 | 0.358084 | 0.362568 | 0.1945 | 0.7109 | 51.94
+2025-05-20 18:47:01,653 - INFO - PRINT: 
+Early stopping triggered after epoch 9
+2025-05-20 18:47:01,653 - INFO - PRINT: Best validation PR-AUC: 0.2179
+2025-05-20 18:47:03,224 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-20 18:47:03,224 - INFO - PRINT: FOLD: 2
+2025-05-20 18:47:03,224 - INFO - PRINT: TRAIN: [10, 11, 6, 31]
+2025-05-20 18:47:03,224 - INFO - PRINT: VAL: [9, 14, 15, 24, 28]
+2025-05-20 18:47:04,510 - INFO - PRINT: Preparing sequences...
+2025-05-20 18:47:04,511 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-20 18:47:08,084 - INFO - PRINT: Starting sequence preparation...
+2025-05-20 18:47:08,371 - INFO - PRINT: Processing 28 sessions...
+2025-05-20 18:47:12,067 - INFO - PRINT: Created 37935 sequences
+2025-05-20 18:47:12,067 - INFO - PRINT: Sequences shape: (37935, 800, 7)
+2025-05-20 18:47:12,236 - INFO - PRINT: Users in train:{10, 11, 6, 31}
+2025-05-20 18:47:12,726 - INFO - PRINT: Users in test:{9, 14, 15, 24, 28}
+2025-05-20 18:47:12,727 - INFO - PRINT: Number of windows for training:21404
+2025-05-20 18:47:12,727 - INFO - PRINT: Number of windows for testing:37935
+2025-05-20 18:47:12,783 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-20 18:47:12,783 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-20 18:47:37,707 - INFO - PRINT:     1 | 0.295401 | 0.924684 | 0.7150 | 0.7496 | 14.87
+2025-05-20 18:48:02,180 - INFO - PRINT:     2 | 0.260392 | 0.955903 | 0.7115 | 0.7490 | 14.42
+2025-05-20 18:48:27,022 - INFO - PRINT:     3 | 0.253623 | 0.908797 | 0.7118 | 0.7499 | 14.92
+2025-05-20 18:48:51,642 - INFO - PRINT:     4 | 0.252143 | 0.930462 | 0.7105 | 0.7532 | 14.71
+2025-05-20 18:49:16,397 - INFO - PRINT:     5 | 0.251289 | 0.932382 | 0.7060 | 0.7495 | 14.70
+2025-05-20 18:55:58,751 - INFO - PRINT:     6 | 0.247147 | 0.971350 | 0.7047 | 0.7493 | 14.72
+2025-05-20 18:55:58,751 - INFO - PRINT: 
+Early stopping triggered after epoch 6
+2025-05-20 18:55:58,751 - INFO - PRINT: Best validation PR-AUC: 0.7150
+2025-05-20 18:56:08,610 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-20 18:56:08,611 - INFO - PRINT: FOLD: 3
+2025-05-20 18:56:08,611 - INFO - PRINT: TRAIN: [6, 9, 11, 14, 15, 24, 28]
+2025-05-20 18:56:08,611 - INFO - PRINT: VAL: [10, 31]
+2025-05-20 18:56:09,947 - INFO - PRINT: Preparing sequences...
+2025-05-20 18:56:09,947 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-20 18:56:20,113 - INFO - PRINT: Starting sequence preparation...
+2025-05-20 18:56:20,191 - INFO - PRINT: Processing 10 sessions...
+2025-05-20 18:56:20,990 - INFO - PRINT: Created 8562 sequences
+2025-05-20 18:56:20,990 - INFO - PRINT: Sequences shape: (8562, 800, 7)
+2025-05-20 18:56:21,519 - INFO - PRINT: Users in train:{6, 9, 11, 14, 15, 24, 28}
+2025-05-20 18:56:21,631 - INFO - PRINT: Users in test:{10, 31}
+2025-05-20 18:56:21,631 - INFO - PRINT: Number of windows for training:67105
+2025-05-20 18:56:21,631 - INFO - PRINT: Number of windows for testing:8562
+2025-05-20 18:56:21,684 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-20 18:56:21,684 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-20 18:57:10,096 - INFO - PRINT:     1 | 0.452331 | 0.458504 | 0.5683 | 0.7901 | 46.08
+2025-05-20 18:57:57,528 - INFO - PRINT:     2 | 0.435177 | 0.423271 | 0.5712 | 0.7925 | 45.18
+2025-05-20 18:58:45,230 - INFO - PRINT:     3 | 0.429542 | 0.493398 | 0.5744 | 0.7961 | 45.44
+2025-05-20 18:59:33,033 - INFO - PRINT:     4 | 0.427828 | 0.455877 | 0.5767 | 0.8005 | 45.55
+2025-05-20 19:00:20,752 - INFO - PRINT:     5 | 0.423224 | 0.463200 | 0.5788 | 0.8100 | 45.45
+2025-05-20 19:01:08,526 - INFO - PRINT:     6 | 0.414981 | 0.437480 | 0.5783 | 0.8109 | 45.52
+2025-05-20 19:01:56,255 - INFO - PRINT:     7 | 0.409451 | 0.438529 | 0.5725 | 0.8070 | 45.47
+2025-05-20 19:02:44,029 - INFO - PRINT:     8 | 0.403066 | 0.449991 | 0.5746 | 0.8015 | 45.52
+2025-05-20 19:03:31,882 - INFO - PRINT:     9 | 0.395318 | 0.412586 | 0.5762 | 0.7973 | 45.58
+2025-05-20 19:04:19,664 - INFO - PRINT:    10 | 0.384542 | 0.416880 | 0.5739 | 0.7937 | 45.50
+2025-05-20 19:04:19,664 - INFO - PRINT: 
+Early stopping triggered after epoch 10
+2025-05-20 19:04:19,665 - INFO - PRINT: Best validation PR-AUC: 0.5788
+2025-05-20 19:04:22,067 - INFO - PRINT: Validation ROC-AUC: 0.7937, PR-AUC: 0.5739, Accuracy: 0.8388, Sober Accuracy: 0.9100, Drunk Accuracy: 0.5244, F1: 0.5458, Threshold: 0.5700
+2025-05-20 19:04:22,067 - INFO - PRINT: Updated best config: {'device': 'mps', 'window_size': 800, 'hidden_size': 128, 'num_layers': 1, 'batch_size': 128, 'dropout': 0.1, 'learning_rate': 0.001, 'epochs': 100, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/biLSTM_DATA_AUGMENTATION/20250520_183833'}, PR-AUC: 0.5739, Threshold: 0.5700, Epoch: 4.00
+2025-05-20 19:04:22,067 - INFO - PRINT: 
+CONFIG 1: {'device': 'mps', 'window_size': 800, 'hidden_size': 128, 'num_layers': 2, 'batch_size': 128, 'dropout': 0.1, 'learning_rate': 0.001, 'epochs': 100, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/biLSTM_DATA_AUGMENTATION/20250520_183833'}
+
+2025-05-20 19:04:22,067 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-20 19:04:22,067 - INFO - PRINT: FOLD: 1
+2025-05-20 19:04:22,067 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-05-20 19:04:22,067 - INFO - PRINT: VAL: [11, 6]
+2025-05-20 19:04:23,488 - INFO - PRINT: Preparing sequences...
+2025-05-20 19:04:23,488 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-20 19:04:34,569 - INFO - PRINT: Starting sequence preparation...
+2025-05-20 19:04:34,602 - INFO - PRINT: Processing 5 sessions...
+2025-05-20 19:04:34,916 - INFO - PRINT: Created 3115 sequences
+2025-05-20 19:04:34,916 - INFO - PRINT: Sequences shape: (3115, 800, 7)
+2025-05-20 19:04:35,514 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-05-20 19:04:35,554 - INFO - PRINT: Users in test:{11, 6}
+2025-05-20 19:04:35,554 - INFO - PRINT: Number of windows for training:76787
+2025-05-20 19:04:35,554 - INFO - PRINT: Number of windows for testing:3115
+2025-05-20 19:04:35,618 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-20 19:04:35,618 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-20 19:06:33,656 - INFO - PRINT:     1 | 0.441389 | 0.356805 | 0.1868 | 0.6941 | 116.23
+2025-05-20 19:08:29,211 - INFO - PRINT:     2 | 0.435039 | 0.338807 | 0.1936 | 0.6954 | 113.77
+2025-05-20 19:10:25,892 - INFO - PRINT:     3 | 0.425505 | 0.337421 | 0.2148 | 0.7094 | 114.89
+2025-05-20 19:12:22,315 - INFO - PRINT:     4 | 0.419979 | 0.344597 | 0.2175 | 0.7195 | 114.63
+2025-05-20 19:14:17,857 - INFO - PRINT:     5 | 0.416254 | 0.326786 | 0.2173 | 0.7174 | 113.75
+2025-05-20 21:47:31,490 - INFO - PRINT:     6 | 0.414906 | 0.350156 | 0.2106 | 0.6851 | 8162.46
+2025-05-20 23:03:21,132 - INFO - PRINT:     7 | 0.409865 | 0.357127 | 0.2027 | 0.6814 | 4546.66
+2025-05-21 00:08:14,333 - INFO - PRINT:     8 | 0.408185 | 0.366160 | 0.1913 | 0.6719 | 3891.39
+2025-05-21 00:10:10,276 - INFO - PRINT:     9 | 0.402690 | 0.354805 | 0.1987 | 0.6943 | 114.10
+2025-05-21 00:10:10,276 - INFO - PRINT: 
+Early stopping triggered after epoch 9
+2025-05-21 00:10:10,276 - INFO - PRINT: Best validation PR-AUC: 0.2175
+2025-05-21 00:10:12,135 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-21 00:10:12,135 - INFO - PRINT: FOLD: 2
+2025-05-21 00:10:12,135 - INFO - PRINT: TRAIN: [10, 11, 6, 31]
+2025-05-21 00:10:12,135 - INFO - PRINT: VAL: [9, 14, 15, 24, 28]
+2025-05-21 00:10:13,573 - INFO - PRINT: Preparing sequences...
+2025-05-21 00:10:13,573 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-21 00:10:17,301 - INFO - PRINT: Starting sequence preparation...
+2025-05-21 00:10:17,589 - INFO - PRINT: Processing 28 sessions...
+2025-05-21 00:10:21,245 - INFO - PRINT: Created 37935 sequences
+2025-05-21 00:10:21,245 - INFO - PRINT: Sequences shape: (37935, 800, 7)
+2025-05-21 00:10:21,413 - INFO - PRINT: Users in train:{10, 11, 6, 31}
+2025-05-21 00:10:21,907 - INFO - PRINT: Users in test:{9, 14, 15, 24, 28}
+2025-05-21 00:10:21,907 - INFO - PRINT: Number of windows for training:21404
+2025-05-21 00:10:21,907 - INFO - PRINT: Number of windows for testing:37935
+2025-05-21 00:10:21,967 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-21 00:10:21,967 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-21 00:11:15,674 - INFO - PRINT:     1 | 0.287047 | 0.818675 | 0.7115 | 0.7466 | 31.98
+2025-05-21 00:12:09,158 - INFO - PRINT:     2 | 0.259474 | 1.075075 | 0.7047 | 0.7348 | 31.89
+2025-05-21 00:13:02,523 - INFO - PRINT:     3 | 0.258357 | 0.900921 | 0.7104 | 0.7473 | 31.75
+2025-05-21 00:13:56,350 - INFO - PRINT:     4 | 0.253784 | 0.802731 | 0.7091 | 0.7467 | 31.81
+2025-05-21 00:14:49,992 - INFO - PRINT:     5 | 0.250497 | 0.876644 | 0.7056 | 0.7439 | 31.99
+2025-05-21 00:15:44,999 - INFO - PRINT:     6 | 0.248468 | 0.845469 | 0.7060 | 0.7450 | 31.78
+2025-05-21 00:15:44,999 - INFO - PRINT: 
+Early stopping triggered after epoch 6
+2025-05-21 00:15:44,999 - INFO - PRINT: Best validation PR-AUC: 0.7115
+2025-05-21 00:16:18,787 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-21 00:16:18,787 - INFO - PRINT: FOLD: 3
+2025-05-21 00:16:18,787 - INFO - PRINT: TRAIN: [6, 9, 11, 14, 15, 24, 28]
+2025-05-21 00:16:18,787 - INFO - PRINT: VAL: [10, 31]
+2025-05-21 00:16:20,730 - INFO - PRINT: Preparing sequences...
+2025-05-21 00:16:20,730 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-21 00:16:30,806 - INFO - PRINT: Starting sequence preparation...
+2025-05-21 00:16:30,882 - INFO - PRINT: Processing 10 sessions...
+2025-05-21 00:16:31,703 - INFO - PRINT: Created 8562 sequences
+2025-05-21 00:16:31,703 - INFO - PRINT: Sequences shape: (8562, 800, 7)
+2025-05-21 00:16:32,259 - INFO - PRINT: Users in train:{6, 9, 11, 14, 15, 24, 28}
+2025-05-21 00:16:32,370 - INFO - PRINT: Users in test:{10, 31}
+2025-05-21 00:16:32,370 - INFO - PRINT: Number of windows for training:67105
+2025-05-21 00:16:32,370 - INFO - PRINT: Number of windows for testing:8562
+2025-05-21 00:16:32,430 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-21 00:16:32,430 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-21 00:19:03,414 - INFO - PRINT:     1 | 0.441557 | 0.391182 | 0.5664 | 0.7886 | 146.10
+2025-05-21 00:20:48,995 - INFO - PRINT:     2 | 0.426903 | 0.429811 | 0.5682 | 0.7945 | 100.68
+2025-05-21 00:22:34,644 - INFO - PRINT:     3 | 0.419140 | 0.411047 | 0.5736 | 0.7859 | 100.74
+2025-05-21 00:24:27,327 - INFO - PRINT:     4 | 0.408901 | 0.392273 | 0.5722 | 0.7822 | 107.93
+2025-05-21 00:26:11,526 - INFO - PRINT:     5 | 0.405158 | 0.474831 | 0.5535 | 0.7803 | 99.43
+2025-05-21 00:27:56,845 - INFO - PRINT:     6 | 0.395968 | 0.401944 | 0.5509 | 0.7840 | 100.44
+2025-05-21 00:29:42,394 - INFO - PRINT:     7 | 0.384496 | 0.426309 | 0.5448 | 0.7461 | 100.68
+2025-05-21 00:31:27,736 - INFO - PRINT:     8 | 0.408000 | 0.542377 | 0.5497 | 0.7975 | 100.57
+2025-05-21 00:31:27,736 - INFO - PRINT: 
+Early stopping triggered after epoch 8
+2025-05-21 00:31:27,736 - INFO - PRINT: Best validation PR-AUC: 0.5736
+2025-05-21 00:31:32,702 - INFO - PRINT: Validation ROC-AUC: 0.7975, PR-AUC: 0.5497, Accuracy: 0.8429, Sober Accuracy: 0.9235, Drunk Accuracy: 0.4870, F1: 0.5338, Threshold: 0.8500
+2025-05-21 00:31:32,702 - INFO - PRINT: 
+CONFIG 2: {'device': 'mps', 'window_size': 800, 'hidden_size': 128, 'num_layers': 4, 'batch_size': 128, 'dropout': 0.1, 'learning_rate': 0.001, 'epochs': 100, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/biLSTM_DATA_AUGMENTATION/20250520_183833'}
+
+2025-05-21 00:31:32,703 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-21 00:31:32,703 - INFO - PRINT: FOLD: 1
+2025-05-21 00:31:32,703 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-05-21 00:31:32,703 - INFO - PRINT: VAL: [11, 6]
+2025-05-21 00:31:34,229 - INFO - PRINT: Preparing sequences...
+2025-05-21 00:31:34,229 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-21 00:31:44,808 - INFO - PRINT: Starting sequence preparation...
+2025-05-21 00:31:44,837 - INFO - PRINT: Processing 5 sessions...
+2025-05-21 00:31:45,142 - INFO - PRINT: Created 3115 sequences
+2025-05-21 00:31:45,143 - INFO - PRINT: Sequences shape: (3115, 800, 7)
+2025-05-21 00:31:45,759 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-05-21 00:31:45,799 - INFO - PRINT: Users in test:{11, 6}
+2025-05-21 00:31:45,799 - INFO - PRINT: Number of windows for training:76787
+2025-05-21 00:31:45,799 - INFO - PRINT: Number of windows for testing:3115
+2025-05-21 00:31:45,874 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-21 00:31:45,874 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-21 00:35:50,099 - INFO - PRINT:     1 | 0.449758 | 0.368339 | 0.1594 | 0.6272 | 240.48
+2025-05-21 00:39:53,605 - INFO - PRINT:     2 | 0.439803 | 0.352436 | 0.1852 | 0.6622 | 239.78
+2025-05-21 00:43:57,177 - INFO - PRINT:     3 | 0.436425 | 0.347340 | 0.1743 | 0.6555 | 239.89
+2025-05-21 00:48:00,895 - INFO - PRINT:     4 | 0.443616 | 0.336257 | 0.1880 | 0.7065 | 240.06
+2025-05-21 00:52:04,103 - INFO - PRINT:     5 | 0.440277 | 0.356762 | 0.1426 | 0.5491 | 239.55
+2025-05-21 00:56:06,967 - INFO - PRINT:     6 | 0.436563 | 0.343345 | 0.1996 | 0.6956 | 239.20
+2025-05-21 01:00:09,862 - INFO - PRINT:     7 | 0.427698 | 0.349359 | 0.1869 | 0.6528 | 239.20
+2025-05-21 01:04:12,696 - INFO - PRINT:     8 | 0.423723 | 0.334940 | 0.1888 | 0.6950 | 239.18
+2025-05-21 01:08:15,513 - INFO - PRINT:     9 | 0.428894 | 0.341383 | 0.1971 | 0.6973 | 239.16
+2025-05-21 01:12:18,301 - INFO - PRINT:    10 | 0.420873 | 0.346376 | 0.2040 | 0.6900 | 239.13
+2025-05-21 01:16:21,116 - INFO - PRINT:    11 | 0.419757 | 0.362805 | 0.1982 | 0.6903 | 239.15
+2025-05-21 01:20:23,922 - INFO - PRINT:    12 | 0.417100 | 0.372860 | 0.2021 | 0.6996 | 239.14
+2025-05-21 01:24:26,713 - INFO - PRINT:    13 | 0.415753 | 0.346481 | 0.2003 | 0.6883 | 239.13
+2025-05-21 01:28:29,495 - INFO - PRINT:    14 | 0.418197 | 0.340192 | 0.1968 | 0.6953 | 239.13
+2025-05-21 01:32:32,263 - INFO - PRINT:    15 | 0.416616 | 0.353495 | 0.1720 | 0.6369 | 239.11
+2025-05-21 01:32:32,264 - INFO - PRINT: 
+Early stopping triggered after epoch 15
+2025-05-21 01:32:32,264 - INFO - PRINT: Best validation PR-AUC: 0.2040
+2025-05-21 01:32:36,023 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-21 01:32:36,024 - INFO - PRINT: FOLD: 2
+2025-05-21 01:32:36,024 - INFO - PRINT: TRAIN: [10, 11, 6, 31]
+2025-05-21 01:32:36,024 - INFO - PRINT: VAL: [9, 14, 15, 24, 28]
+2025-05-21 01:32:37,385 - INFO - PRINT: Preparing sequences...
+2025-05-21 01:32:37,385 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-21 01:32:41,442 - INFO - PRINT: Starting sequence preparation...
+2025-05-21 01:32:41,737 - INFO - PRINT: Processing 28 sessions...
+2025-05-21 01:32:45,316 - INFO - PRINT: Created 37935 sequences
+2025-05-21 01:32:45,316 - INFO - PRINT: Sequences shape: (37935, 800, 7)
+2025-05-21 01:32:45,484 - INFO - PRINT: Users in train:{10, 11, 6, 31}
+2025-05-21 01:32:45,979 - INFO - PRINT: Users in test:{9, 14, 15, 24, 28}
+2025-05-21 01:32:45,979 - INFO - PRINT: Number of windows for training:21404
+2025-05-21 01:32:45,979 - INFO - PRINT: Number of windows for testing:37935
+2025-05-21 01:32:46,110 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-21 01:32:46,110 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-21 01:34:37,523 - INFO - PRINT:     1 | 0.277262 | 0.967700 | 0.7007 | 0.7295 | 67.11
+2025-05-21 01:36:28,526 - INFO - PRINT:     2 | 0.262211 | 1.115452 | 0.6838 | 0.7148 | 66.80
+2025-05-21 01:38:19,478 - INFO - PRINT:     3 | 0.262876 | 1.005646 | 0.6949 | 0.7312 | 66.79
+2025-05-21 01:40:10,473 - INFO - PRINT:     4 | 0.256511 | 0.834419 | 0.6900 | 0.7251 | 66.80
+2025-05-21 01:42:01,465 - INFO - PRINT:     5 | 0.252971 | 1.016147 | 0.6909 | 0.7359 | 66.79
+2025-05-21 01:43:52,429 - INFO - PRINT:     6 | 0.250237 | 0.832568 | 0.6804 | 0.7132 | 66.79
+2025-05-21 01:43:52,430 - INFO - PRINT: 
+Early stopping triggered after epoch 6
+2025-05-21 01:43:52,430 - INFO - PRINT: Best validation PR-AUC: 0.7007
+2025-05-21 01:44:36,537 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-21 01:44:36,537 - INFO - PRINT: FOLD: 3
+2025-05-21 01:44:36,537 - INFO - PRINT: TRAIN: [6, 9, 11, 14, 15, 24, 28]
+2025-05-21 01:44:36,537 - INFO - PRINT: VAL: [10, 31]
+2025-05-21 01:44:37,993 - INFO - PRINT: Preparing sequences...
+2025-05-21 01:44:37,994 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-21 01:44:48,320 - INFO - PRINT: Starting sequence preparation...
+2025-05-21 01:44:48,398 - INFO - PRINT: Processing 10 sessions...
+2025-05-21 01:44:49,219 - INFO - PRINT: Created 8562 sequences
+2025-05-21 01:44:49,219 - INFO - PRINT: Sequences shape: (8562, 800, 7)
+2025-05-21 01:44:49,764 - INFO - PRINT: Users in train:{6, 9, 11, 14, 15, 24, 28}
+2025-05-21 01:44:49,873 - INFO - PRINT: Users in test:{10, 31}
+2025-05-21 01:44:49,873 - INFO - PRINT: Number of windows for training:67105
+2025-05-21 01:44:49,873 - INFO - PRINT: Number of windows for testing:8562
+2025-05-21 01:44:49,973 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-21 01:44:49,974 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-21 01:48:30,401 - INFO - PRINT:     1 | 0.453207 | 0.423625 | 0.5465 | 0.7777 | 210.42
+2025-05-21 01:52:09,651 - INFO - PRINT:     2 | 0.436725 | 0.489794 | 0.5505 | 0.7850 | 209.26
+2025-05-21 01:55:49,363 - INFO - PRINT:     3 | 0.429348 | 0.507898 | 0.5523 | 0.7918 | 209.52
+2025-05-21 01:59:29,357 - INFO - PRINT:     4 | 0.424921 | 0.464383 | 0.5577 | 0.7917 | 209.81
+2025-05-21 02:03:09,269 - INFO - PRINT:     5 | 0.427318 | 0.440676 | 0.5579 | 0.7955 | 209.71
+2025-05-21 02:06:49,187 - INFO - PRINT:     6 | 0.415967 | 0.402337 | 0.5633 | 0.7984 | 209.73
+2025-05-21 02:10:29,009 - INFO - PRINT:     7 | 0.416886 | 0.421906 | 0.5454 | 0.7973 | 209.66
+2025-05-21 02:14:09,048 - INFO - PRINT:     8 | 0.421620 | 0.441427 | 0.5334 | 0.7797 | 209.85
+2025-05-21 02:17:48,870 - INFO - PRINT:     9 | 0.420900 | 0.432398 | 0.5388 | 0.7794 | 209.67
+2025-05-21 02:21:28,783 - INFO - PRINT:    10 | 0.421190 | 0.435865 | 0.5678 | 0.7960 | 209.73
+2025-05-21 02:25:08,622 - INFO - PRINT:    11 | 0.446827 | 0.531625 | 0.5352 | 0.7826 | 209.65
+2025-05-21 02:28:48,458 - INFO - PRINT:    12 | 0.438253 | 0.416181 | 0.5378 | 0.7610 | 209.65
+2025-05-21 02:32:28,174 - INFO - PRINT:    13 | 0.431456 | 0.547866 | 0.5454 | 0.7872 | 209.60
+2025-05-21 02:36:07,932 - INFO - PRINT:    14 | 0.427701 | 0.554051 | 0.5194 | 0.7852 | 209.56
+2025-05-21 02:39:47,704 - INFO - PRINT:    15 | 0.423157 | 0.446876 | 0.5171 | 0.7898 | 209.60
+2025-05-21 02:39:47,705 - INFO - PRINT: 
+Early stopping triggered after epoch 15
+2025-05-21 02:39:47,705 - INFO - PRINT: Best validation PR-AUC: 0.5678
+2025-05-21 02:39:58,019 - INFO - PRINT: Validation ROC-AUC: 0.7898, PR-AUC: 0.5171, Accuracy: 0.8326, Sober Accuracy: 0.9016, Drunk Accuracy: 0.5281, F1: 0.5382, Threshold: 0.6700
+2025-05-21 02:39:58,019 - INFO - PRINT: ==================================================
+2025-05-21 02:39:58,019 - INFO - PRINT: Final best config: {'device': 'mps', 'window_size': 800, 'hidden_size': 128, 'num_layers': 1, 'batch_size': 128, 'dropout': 0.1, 'learning_rate': 0.001, 'epochs': 4, 'patience': 4, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/biLSTM_DATA_AUGMENTATION/20250520_183833'}, Final best pr_auc: 0.573895095078531, Final best threshold: 0.5700000000000001, Final best epoch: 4.0
+2025-05-21 02:39:58,019 - INFO - PRINT: ==================================================
+END CROSSVALIDATION
+==================================================
+2025-05-21 02:39:58,327 - INFO - PRINT: 
+BEGIN TRAIN AND EVALUATION FINAL MODEL
+
+2025-05-21 02:39:59,584 - INFO - PRINT: Preparing sequences...
+2025-05-21 02:39:59,584 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-21 02:40:11,935 - INFO - PRINT: Starting sequence preparation...
+2025-05-21 02:40:11,971 - INFO - PRINT: Processing 7 sessions...
+2025-05-21 02:40:12,348 - INFO - PRINT: Created 3958 sequences
+2025-05-21 02:40:12,348 - INFO - PRINT: Sequences shape: (3958, 800, 7)
+2025-05-21 02:40:13,016 - INFO - PRINT: Users in train:{6, 9, 10, 11, 14, 15, 24, 28, 31}
+2025-05-21 02:40:13,068 - INFO - PRINT: Users in test:{16, 25, 26}
+2025-05-21 02:40:13,068 - INFO - PRINT: Number of windows for training:82648
+2025-05-21 02:40:13,068 - INFO - PRINT: Number of windows for testing:3958
+2025-05-21 02:40:13,079 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-05-21 02:40:13,079 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-05-21 02:41:10,902 - INFO - PRINT:     1 | 0.440395 | ------ | ------ | 57.82
+2025-05-21 02:42:06,696 - INFO - PRINT:     2 | 0.416631 | ------ | ------ | 55.79
+2025-05-21 02:43:02,867 - INFO - PRINT:     3 | 0.409588 | ------ | ------ | 56.17
+2025-05-21 02:43:59,144 - INFO - PRINT:     4 | 0.403456 | ------ | ------ | 56.28
+2025-05-21 02:44:21,618 - INFO - PRINT: Training ROC-AUC: 0.7888, PR-AUC: 0.5765, Accuracy: 0.8410, Sober Accuracy: 0.9776, Drunk Accuracy: 0.2964, F1: 0.4278, Threshold: 0.5700
+2025-05-21 02:44:21,620 - INFO - PRINT: Test ROC-AUC: 0.6850, PR-AUC: 0.6816, Accuracy: 0.7681, Sober Accuracy: 0.9724, Drunk Accuracy: 0.4193, F1: 0.5718, Threshold: 0.5700
+2025-05-21 02:44:21,642 - INFO - PRINT: Model, predictions, ground truth, and metrics saved in results/biLSTM_DATA_AUGMENTATION/20250520_183833

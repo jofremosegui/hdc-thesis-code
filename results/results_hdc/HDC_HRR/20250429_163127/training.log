@@ -1,0 +1,25 @@
+2025-04-29 16:31:27,225 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_HRR_UNDERSAMPLING/20250429_163127/training.log
+2025-04-29 16:31:27,225 - INFO - PRINT: Total configurations: 1
+2025-04-29 16:31:46,285 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-29 16:31:46,285 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 10000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'vsa_type': 'HRR', 'runtime_log_fld': 'results/HDC_HRR_UNDERSAMPLING/20250429_163127'}
+
+2025-04-29 16:31:46,285 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-29 16:31:46,285 - INFO - PRINT: FOLD: 1
+2025-04-29 16:31:46,285 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-29 16:31:46,285 - INFO - PRINT: VAL: [11, 6]
+2025-04-29 16:31:47,820 - INFO - PRINT: Preparing sequences...
+2025-04-29 16:31:49,101 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-29 16:31:53,842 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-29 16:31:58,186 - INFO - PRINT: Undersampled sequence shape: (70055, 800, 7)
+2025-04-29 16:31:58,409 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-29 16:31:58,729 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-29 16:31:58,932 - INFO - PRINT: Undersampled sequence shape: (5388, 800, 7)
+2025-04-29 16:31:59,532 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-04-29 16:31:59,572 - INFO - PRINT: Users in test:{11, 6}
+2025-04-29 16:31:59,572 - INFO - PRINT: Number of windows for training:70055
+2025-04-29 16:31:59,572 - INFO - PRINT: Number of windows for testing:5388
+2025-04-29 16:31:59,802 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-29 16:31:59,802 - INFO - PRINT: -------------------------------------------------------------------------------------

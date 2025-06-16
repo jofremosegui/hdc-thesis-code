@@ -1,0 +1,31 @@
+2025-04-10 12:47:45,123 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced/20250410_124745/training.log
+2025-04-10 12:47:45,123 - INFO - PRINT: Total configurations: 1
+2025-04-10 12:48:08,403 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-10 12:48:08,404 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced/20250410_124745'}
+
+2025-04-10 12:48:08,404 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-10 12:48:08,404 - INFO - PRINT: FOLD: 1
+2025-04-10 12:48:08,404 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-10 12:48:08,404 - INFO - PRINT: VAL: [11, 6]
+2025-04-10 12:48:09,977 - INFO - PRINT: Preparing sequences...
+2025-04-10 12:48:11,282 - INFO - PRINT: Preparing balanced sequences...
+2025-04-10 12:48:16,249 - INFO - PRINT: Balancing sequences via oversampling...
+2025-04-10 12:48:18,001 - INFO - PRINT: Balanced sequence shape: (60580, 800, 7)
+2025-04-10 12:48:18,001 - INFO - PRINT: Balanced label counts:
+2025-04-10 12:48:18,001 - INFO - PRINT:   sober (0): 30290
+2025-04-10 12:48:18,001 - INFO - PRINT:   drunk (1): 30290
+2025-04-10 12:48:18,227 - INFO - PRINT: Preparing balanced sequences...
+2025-04-10 12:48:18,537 - INFO - PRINT: Balancing sequences via oversampling...
+2025-04-10 12:48:18,588 - INFO - PRINT: Balanced sequence shape: (5492, 800, 7)
+2025-04-10 12:48:18,588 - INFO - PRINT: Balanced label counts:
+2025-04-10 12:48:18,588 - INFO - PRINT:   sober (0): 2746
+2025-04-10 12:48:18,588 - INFO - PRINT:   drunk (1): 2746
+2025-04-10 12:48:19,206 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-04-10 12:48:19,246 - INFO - PRINT: Users in test:{11, 6}
+2025-04-10 12:48:19,246 - INFO - PRINT: Number of windows for training:60580
+2025-04-10 12:48:19,247 - INFO - PRINT: Number of windows for testing:5492
+2025-04-10 12:48:19,591 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-10 12:48:19,591 - INFO - PRINT: -------------------------------------------------------------------------------------

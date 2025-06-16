@@ -1,0 +1,25 @@
+2025-04-09 10:57:36,388 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced/20250409_105736/training.log
+2025-04-09 10:57:36,388 - INFO - PRINT: Total configurations: 1
+2025-04-09 10:57:52,915 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-09 10:57:52,916 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced/20250409_105736'}
+
+2025-04-09 10:57:52,916 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-09 10:57:52,916 - INFO - PRINT: FOLD: 1
+2025-04-09 10:57:52,916 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-09 10:57:52,916 - INFO - PRINT: VAL: [11, 6]
+2025-04-09 10:57:54,295 - INFO - PRINT: Preparing sequences...
+2025-04-09 10:57:55,535 - INFO - PRINT: Preparing balanced sequences...
+2025-04-09 10:58:00,229 - INFO - PRINT: Balancing sequences via oversampling...
+2025-04-09 10:58:01,543 - INFO - PRINT: Balanced sequence shape: (60580, 800, 7)
+2025-04-09 10:58:01,761 - INFO - PRINT: Preparing balanced sequences...
+2025-04-09 10:58:02,068 - INFO - PRINT: Balancing sequences via oversampling...
+2025-04-09 10:58:02,127 - INFO - PRINT: Balanced sequence shape: (5492, 800, 7)
+2025-04-09 10:58:02,724 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-04-09 10:58:02,763 - INFO - PRINT: Users in test:{11, 6}
+2025-04-09 10:58:02,763 - INFO - PRINT: Number of windows for training:60580
+2025-04-09 10:58:02,763 - INFO - PRINT: Number of windows for testing:5492
+2025-04-09 10:58:02,993 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-09 10:58:02,993 - INFO - PRINT: -------------------------------------------------------------------------------------

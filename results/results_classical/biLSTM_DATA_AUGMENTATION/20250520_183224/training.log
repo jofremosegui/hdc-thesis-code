@@ -1,0 +1,25 @@
+2025-05-20 18:32:24,944 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/biLSTM_DATA_AUGMENTATION/20250520_183224/training.log
+2025-05-20 18:32:24,944 - INFO - PRINT: Total configurations: 3
+2025-05-20 18:32:44,499 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-05-20 18:32:44,500 - INFO - PRINT: 
+CONFIG 0: {'device': 'cuda', 'window_size': 800, 'hidden_size': 128, 'num_layers': 1, 'batch_size': 128, 'dropout': 0.1, 'learning_rate': 0.001, 'epochs': 100, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/biLSTM_DATA_AUGMENTATION/20250520_183224'}
+
+2025-05-20 18:32:44,500 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-20 18:32:44,500 - INFO - PRINT: FOLD: 1
+2025-05-20 18:32:44,500 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-05-20 18:32:44,500 - INFO - PRINT: VAL: [11, 6]
+2025-05-20 18:32:45,840 - INFO - PRINT: Preparing sequences...
+2025-05-20 18:32:47,109 - INFO - PRINT: Starting sequence preparation...
+2025-05-20 18:32:47,463 - INFO - PRINT: Processing 38 sessions...
+2025-05-20 18:32:51,867 - INFO - PRINT: Created 46497 sequences
+2025-05-20 18:32:51,867 - INFO - PRINT: Sequences shape: (46497, 800, 7)
+2025-05-20 18:32:51,974 - INFO - PRINT: Starting sequence preparation...
+2025-05-20 18:32:51,999 - INFO - PRINT: Processing 5 sessions...
+2025-05-20 18:32:52,288 - INFO - PRINT: Created 3115 sequences
+2025-05-20 18:32:52,288 - INFO - PRINT: Sequences shape: (3115, 800, 7)
+2025-05-20 18:32:52,886 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-05-20 18:32:52,926 - INFO - PRINT: Users in test:{11, 6}
+2025-05-20 18:32:52,926 - INFO - PRINT: Number of windows for training:46497
+2025-05-20 18:32:52,926 - INFO - PRINT: Number of windows for testing:3115

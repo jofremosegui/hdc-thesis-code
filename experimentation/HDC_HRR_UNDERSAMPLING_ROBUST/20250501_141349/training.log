@@ -1,0 +1,15 @@
+2025-05-01 14:13:49,309 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_HRR_UNDERSAMPLING_ROBUST/20250501_141349/training.log
+2025-05-01 14:13:49,309 - INFO - PRINT: Total configurations: 1
+2025-05-01 14:14:13,169 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-05-01 14:14:13,170 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'vsa_type': 'HRR', 'runtime_log_fld': 'results/HDC_HRR_UNDERSAMPLING_ROBUST/20250501_141349'}
+
+2025-05-01 14:14:13,170 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-05-01 14:14:13,170 - INFO - PRINT: FOLD: 1
+2025-05-01 14:14:13,170 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-05-01 14:14:13,170 - INFO - PRINT: VAL: [11, 6]
+2025-05-01 14:14:14,958 - INFO - PRINT: Preparing sequences...
+2025-05-01 14:14:16,224 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-01 14:14:21,399 - INFO - PRINT: Balancing sequences via undersampling...

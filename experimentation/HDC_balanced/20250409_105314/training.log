@@ -1,0 +1,5 @@
+2025-04-09 10:53:14,226 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced/20250409_105314/training.log
+2025-04-09 10:53:14,226 - INFO - PRINT: Total configurations: 1
+2025-04-09 10:54:39,184 - INFO - PRINT: /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/torchhd/__init__.py
+2025-04-09 10:54:39,184 - INFO - PRINT: /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/torchhd/embeddings.py
+2025-04-09 10:54:39,184 - INFO - PRINT: /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/torchhd/models.py

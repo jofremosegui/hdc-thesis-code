@@ -1,0 +1,140 @@
+2025-04-26 10:17:14,154 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250426_101714/training.log
+2025-04-26 10:17:14,155 - INFO - PRINT: Total configurations: 1
+2025-04-26 10:17:37,616 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-26 10:17:37,617 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250426_101714'}
+
+2025-04-26 10:17:37,617 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-26 10:17:37,617 - INFO - PRINT: FOLD: 1
+2025-04-26 10:17:37,618 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-26 10:17:37,618 - INFO - PRINT: VAL: [11, 6]
+2025-04-26 10:17:39,296 - INFO - PRINT: Preparing sequences...
+2025-04-26 10:17:40,535 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-26 10:17:45,296 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-26 10:17:48,966 - INFO - PRINT: Undersampled sequence shape: (69436, 800, 7)
+2025-04-26 10:17:49,205 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-26 10:17:49,501 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-26 10:17:49,588 - INFO - PRINT: Undersampled sequence shape: (3957, 800, 7)
+2025-04-26 10:17:50,183 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-04-26 10:17:50,222 - INFO - PRINT: Users in test:{11, 6}
+2025-04-26 10:17:50,222 - INFO - PRINT: Number of windows for training:69436
+2025-04-26 10:17:50,222 - INFO - PRINT: Number of windows for testing:3957
+2025-04-26 10:17:50,456 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-26 10:17:50,456 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-04-26 10:48:28,760 - INFO - PRINT:     1 | 1.046951 | 0.957678 | 0.8778 | 0.8318 | 1821.93
+2025-04-26 11:01:45,786 - INFO - PRINT:     2 | 1.023118 | 0.949716 | 0.8779 | 0.8322 | 734.70
+2025-04-26 11:15:07,335 - INFO - PRINT:     3 | 1.036197 | 0.961076 | 0.8774 | 0.8314 | 740.13
+2025-04-26 11:28:28,374 - INFO - PRINT:     4 | 1.032307 | 0.952436 | 0.8776 | 0.8318 | 741.09
+2025-04-26 11:41:49,564 - INFO - PRINT:     5 | 1.020888 | 0.947424 | 0.8778 | 0.8321 | 741.32
+2025-04-26 11:55:12,144 - INFO - PRINT:     6 | 1.030070 | 0.951810 | 0.8775 | 0.8316 | 739.72
+2025-04-26 12:08:32,807 - INFO - PRINT:     7 | 1.017346 | 0.941599 | 0.8781 | 0.8327 | 739.55
+2025-04-26 12:21:52,770 - INFO - PRINT:     8 | 1.012246 | 0.934809 | 0.8783 | 0.8330 | 737.42
+2025-04-26 12:35:14,465 - INFO - PRINT:     9 | 1.010772 | 0.933903 | 0.8783 | 0.8331 | 739.51
+2025-04-26 12:48:36,949 - INFO - PRINT:    10 | 1.008301 | 0.930622 | 0.8783 | 0.8332 | 740.41
+2025-04-26 12:48:56,533 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-26 12:48:56,533 - INFO - PRINT: FOLD: 2
+2025-04-26 12:48:56,533 - INFO - PRINT: TRAIN: [10, 11, 6, 31]
+2025-04-26 12:48:56,533 - INFO - PRINT: VAL: [9, 14, 15, 24, 28]
+2025-04-26 12:49:05,152 - INFO - PRINT: Preparing sequences...
+2025-04-26 12:49:05,491 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-26 12:49:06,861 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-26 12:49:07,851 - INFO - PRINT: Undersampled sequence shape: (17705, 800, 7)
+2025-04-26 12:49:08,977 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-26 12:49:13,552 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-26 12:49:16,151 - INFO - PRINT: Undersampled sequence shape: (55688, 800, 7)
+2025-04-26 12:49:16,384 - INFO - PRINT: Users in train:{10, 11, 6, 31}
+2025-04-26 12:49:16,884 - INFO - PRINT: Users in test:{9, 14, 15, 24, 28}
+2025-04-26 12:49:16,884 - INFO - PRINT: Number of windows for training:17705
+2025-04-26 12:49:16,884 - INFO - PRINT: Number of windows for testing:55688
+2025-04-26 12:49:17,191 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-26 12:49:17,192 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-04-26 12:56:26,574 - INFO - PRINT:     1 | 0.792148 | 0.582264 | 0.5622 | 0.7536 | 197.89
+2025-04-26 13:03:22,301 - INFO - PRINT:     2 | 0.831413 | 0.585220 | 0.5713 | 0.7579 | 192.45
+2025-04-26 13:10:17,987 - INFO - PRINT:     3 | 0.857268 | 0.587580 | 0.5759 | 0.7600 | 193.85
+2025-04-26 13:17:11,695 - INFO - PRINT:     4 | 0.860960 | 0.589179 | 0.5773 | 0.7608 | 192.91
+2025-04-26 13:24:05,374 - INFO - PRINT:     5 | 0.870886 | 0.589293 | 0.5792 | 0.7616 | 192.87
+2025-04-26 13:30:59,798 - INFO - PRINT:     6 | 0.872757 | 0.588704 | 0.5783 | 0.7613 | 193.04
+2025-04-26 13:37:54,973 - INFO - PRINT:     7 | 0.862310 | 0.588687 | 0.5784 | 0.7614 | 193.41
+2025-04-26 13:44:48,708 - INFO - PRINT:     8 | 0.877166 | 0.590300 | 0.5806 | 0.7623 | 193.36
+2025-04-26 13:51:42,905 - INFO - PRINT:     9 | 0.877520 | 0.589671 | 0.5801 | 0.7621 | 192.79
+2025-04-26 13:58:36,442 - INFO - PRINT:    10 | 0.878020 | 0.589310 | 0.5802 | 0.7622 | 193.65
+2025-04-26 14:02:17,829 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-26 14:02:17,830 - INFO - PRINT: FOLD: 3
+2025-04-26 14:02:17,830 - INFO - PRINT: TRAIN: [6, 9, 11, 14, 15, 24, 28]
+2025-04-26 14:02:17,830 - INFO - PRINT: VAL: [10, 31]
+2025-04-26 14:02:25,492 - INFO - PRINT: Preparing sequences...
+2025-04-26 14:02:26,672 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-26 14:02:31,613 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-26 14:02:34,463 - INFO - PRINT: Undersampled sequence shape: (59645, 800, 7)
+2025-04-26 14:02:34,820 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-26 14:02:35,751 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-26 14:02:36,254 - INFO - PRINT: Undersampled sequence shape: (13748, 800, 7)
+2025-04-26 14:02:36,839 - INFO - PRINT: Users in train:{6, 9, 11, 14, 15, 24, 28}
+2025-04-26 14:02:36,952 - INFO - PRINT: Users in test:{10, 31}
+2025-04-26 14:02:36,952 - INFO - PRINT: Number of windows for training:59645
+2025-04-26 14:02:36,952 - INFO - PRINT: Number of windows for testing:13748
+2025-04-26 14:02:37,273 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-26 14:02:37,273 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-04-26 14:16:14,080 - INFO - PRINT:     1 | 0.691153 | 1.446810 | 0.2175 | 0.4152 | 642.03
+2025-04-26 14:29:28,577 - INFO - PRINT:     2 | 0.711612 | 1.484284 | 0.2178 | 0.4157 | 621.56
+2025-04-26 14:41:02,276 - INFO - PRINT:     3 | 0.783281 | 1.622324 | 0.2192 | 0.4151 | 628.98
+2025-04-26 14:52:31,638 - INFO - PRINT:     4 | 0.815192 | 1.652724 | 0.2191 | 0.4150 | 620.67
+2025-04-26 15:03:57,137 - INFO - PRINT:     5 | 0.832158 | 1.667282 | 0.2192 | 0.4150 | 621.54
+2025-04-26 15:17:10,324 - INFO - PRINT:     6 | 0.832244 | 1.674929 | 0.2192 | 0.4149 | 618.69
+2025-04-26 15:28:44,773 - INFO - PRINT:     7 | 0.833917 | 1.670203 | 0.2192 | 0.4149 | 627.93
+2025-04-26 15:40:12,494 - INFO - PRINT:     8 | 0.844154 | 1.685504 | 0.2192 | 0.4149 | 618.20
+2025-04-26 15:51:38,836 - INFO - PRINT:     9 | 0.836915 | 1.675713 | 0.2192 | 0.4149 | 622.58
+2025-04-26 16:04:53,082 - INFO - PRINT:    10 | 0.843489 | 1.680293 | 0.2192 | 0.4149 | 621.40
+2025-04-26 16:05:53,596 - INFO - PRINT: Validation ROC-AUC: 0.4149, PR-AUC: 0.2192, Accuracy: 0.7589, Sober Accuracy: 0.0397, Drunk Accuracy: 0.9931, F1: 0.0748, Threshold: 0.9800
+2025-04-26 16:05:53,596 - INFO - PRINT: Updated best config: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250426_101714'}, PR-AUC: 0.2192, Threshold: 0.9800, Epoch: 9.00
+2025-04-26 16:05:53,596 - INFO - PRINT: ==================================================
+2025-04-26 16:05:53,596 - INFO - PRINT: Final best config: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 9, 'patience': 9, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250426_101714'}, Final best pr_auc: 0.21917229211681385, Final best threshold: 0.98, Final best epoch: 9.0
+2025-04-26 16:05:53,596 - INFO - PRINT: ==================================================
+END CROSSVALIDATION
+==================================================
+2025-04-26 16:05:56,640 - INFO - PRINT: 
+BEGIN TRAIN AND EVALUATION FINAL MODEL
+
+2025-04-26 16:06:01,857 - INFO - PRINT: Preparing sequences...
+2025-04-26 16:06:03,331 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-26 16:06:09,472 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-26 16:06:13,089 - INFO - PRINT: Undersampled sequence shape: (73393, 800, 7)
+2025-04-26 16:06:13,311 - INFO - PRINT: Starting sequence preparation...
+2025-04-26 16:06:13,349 - INFO - PRINT: Processing 7 sessions...
+2025-04-26 16:06:13,734 - INFO - PRINT: Created 3958 sequences
+2025-04-26 16:06:13,734 - INFO - PRINT: Sequences shape: (3958, 800, 7)
+2025-04-26 16:06:14,393 - INFO - PRINT: Users in train:{6, 9, 10, 11, 14, 15, 24, 28, 31}
+2025-04-26 16:06:14,445 - INFO - PRINT: Users in test:{16, 25, 26}
+2025-04-26 16:06:14,445 - INFO - PRINT: Number of windows for training:73393
+2025-04-26 16:06:14,445 - INFO - PRINT: Number of windows for testing:3958
+2025-04-26 16:06:16,710 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-26 16:06:16,710 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-04-26 16:19:23,789 - INFO - PRINT:     1 | 0.850850 | ------ | ------ | 787.08
+2025-04-26 16:32:11,605 - INFO - PRINT:     2 | 0.868706 | ------ | ------ | 767.82
+2025-04-26 16:44:58,340 - INFO - PRINT:     3 | 0.871206 | ------ | ------ | 766.73
+2025-04-26 16:57:45,944 - INFO - PRINT:     4 | 0.884416 | ------ | ------ | 767.60
+2025-04-26 17:10:32,005 - INFO - PRINT:     5 | 0.885179 | ------ | ------ | 766.06
+2025-04-26 17:23:18,360 - INFO - PRINT:     6 | 0.905181 | ------ | ------ | 766.35
+2025-04-26 17:36:04,599 - INFO - PRINT:     7 | 0.914179 | ------ | ------ | 766.24
+2025-04-26 17:48:50,627 - INFO - PRINT:     8 | 0.915635 | ------ | ------ | 766.01
+2025-04-26 18:01:36,811 - INFO - PRINT:     9 | 0.922252 | ------ | ------ | 766.18
+2025-04-26 18:06:37,637 - INFO - PRINT: Training ROC-AUC: 0.7152, PR-AUC: 0.5541, Accuracy: 0.6594, Sober Accuracy: 0.0332, Drunk Accuracy: 0.9994, F1: 0.0642, Threshold: 0.9800
+2025-04-26 18:06:37,640 - INFO - PRINT: Test ROC-AUC: 0.7386, PR-AUC: 0.7626, Accuracy: 0.3891, Sober Accuracy: 0.0000, Drunk Accuracy: 1.0000, F1: 0.0000, Threshold: 0.9800
+2025-04-26 18:06:37,732 - INFO - PRINT: Model, predictions, ground truth, and metrics saved in results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250426_101714
+2025-04-26 18:06:40,936 - INFO - PRINT: Confusion Matrix:
+2025-04-26 18:06:40,936 - INFO - PRINT: [[ 950  590]
+ [ 313 2105]]
+2025-04-26 18:06:40,954 - DEBUG - locator: <matplotlib.ticker.AutoLocator object at 0x714cbdf110>
+2025-04-26 18:06:41,044 - INFO - PRINT: Class counts in TEST set:
+2025-04-26 18:06:41,045 - INFO - PRINT: Label 0: 1540
+2025-04-26 18:06:41,045 - INFO - PRINT: Label 1: 2418
+2025-04-26 18:06:41,045 - INFO - PRINT: 
+Class counts in TRAIN set:
+2025-04-26 18:06:41,045 - INFO - PRINT: Label 0: 47562
+2025-04-26 18:06:41,045 - INFO - PRINT: Label 1: 25831
+2025-04-28 12:34:25,158 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-04-28 12:34:25,159 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-04-28 12:34:25,159 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py
+2025-04-28 12:34:25,170 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py

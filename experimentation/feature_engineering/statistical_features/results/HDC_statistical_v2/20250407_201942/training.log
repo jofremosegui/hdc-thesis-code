@@ -1,0 +1,70 @@
+2025-04-07 20:19:42,120 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/feature_engineering/statistical_features/results/HDC_statistical_v2/20250407_201942/training.log
+2025-04-07 20:19:42,120 - INFO - PRINT: Total configurations: 1
+2025-04-07 20:19:42,285 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-07 20:19:42,285 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 1, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_statistical_v2/20250407_201942'}
+
+2025-04-07 20:19:42,285 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-07 20:19:42,285 - INFO - PRINT: FOLD: 1
+2025-04-07 20:19:42,285 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-07 20:19:42,285 - INFO - PRINT: VAL: [11, 6]
+2025-04-07 20:19:42,523 - INFO - PRINT: Epoch 1 / 10
+2025-04-07 20:21:48,292 - INFO - PRINT: Epoch 2 / 10
+2025-04-07 20:23:52,228 - INFO - PRINT: Epoch 3 / 10
+2025-04-07 20:25:56,762 - INFO - PRINT: Epoch 4 / 10
+2025-04-07 20:27:59,847 - INFO - PRINT: Epoch 5 / 10
+2025-04-07 20:30:05,116 - INFO - PRINT: Epoch 6 / 10
+2025-04-07 20:32:03,966 - INFO - PRINT: Epoch 7 / 10
+2025-04-07 20:34:06,585 - INFO - PRINT: Epoch 8 / 10
+2025-04-07 20:47:42,182 - INFO - PRINT: Epoch 9 / 10
+2025-04-07 20:49:46,079 - INFO - PRINT: Epoch 10 / 10
+2025-04-07 20:51:50,111 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-07 20:51:50,111 - INFO - PRINT: FOLD: 2
+2025-04-07 20:51:50,111 - INFO - PRINT: TRAIN: [10, 11, 6, 31]
+2025-04-07 20:51:50,111 - INFO - PRINT: VAL: [9, 14, 15, 24, 28]
+2025-04-07 20:51:50,175 - INFO - PRINT: Epoch 1 / 10
+2025-04-07 20:52:22,133 - INFO - PRINT: Epoch 2 / 10
+2025-04-07 20:52:54,045 - INFO - PRINT: Epoch 3 / 10
+2025-04-07 20:53:26,016 - INFO - PRINT: Epoch 4 / 10
+2025-04-07 20:53:57,993 - INFO - PRINT: Epoch 5 / 10
+2025-04-07 20:54:29,850 - INFO - PRINT: Epoch 6 / 10
+2025-04-07 20:55:02,725 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-07 20:55:02,726 - INFO - PRINT: FOLD: 3
+2025-04-07 20:55:02,726 - INFO - PRINT: TRAIN: [6, 9, 11, 14, 15, 24, 28]
+2025-04-07 20:55:02,726 - INFO - PRINT: VAL: [10, 31]
+2025-04-07 20:55:02,919 - INFO - PRINT: Epoch 1 / 10
+2025-04-07 20:56:49,362 - INFO - PRINT: Epoch 2 / 10
+2025-04-07 20:58:35,970 - INFO - PRINT: Epoch 3 / 10
+2025-04-07 21:00:22,878 - INFO - PRINT: Epoch 4 / 10
+2025-04-07 21:02:09,289 - INFO - PRINT: Epoch 5 / 10
+2025-04-07 21:03:56,830 - INFO - PRINT: Epoch 6 / 10
+2025-04-07 21:05:43,538 - INFO - PRINT: Epoch 7 / 10
+2025-04-07 21:07:30,216 - INFO - PRINT: Epoch 8 / 10
+2025-04-07 21:09:16,816 - INFO - PRINT: Epoch 9 / 10
+2025-04-07 21:11:03,473 - INFO - PRINT: Epoch 10 / 10
+2025-04-07 21:12:50,567 - INFO - PRINT: Validation ROC-AUC: 0.5003, PR-AUC: 0.4665, Accuracy: 0.4666, Sober Accuracy: 0.0005, Drunk Accuracy: 1.0000, F1: 0.6362, Threshold: 0.3400
+2025-04-07 21:12:50,567 - INFO - PRINT: Updated best config: {'device': 'mps', 'window_size': 1, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_statistical_v2/20250407_201942'}, PR-AUC: 0.4665, Threshold: 0.3400, Epoch: 7.00
+2025-04-07 21:12:50,567 - INFO - PRINT: ==================================================
+2025-04-07 21:12:50,567 - INFO - PRINT: Final best config: {'device': 'mps', 'window_size': 1, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 7, 'patience': 7, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_statistical_v2/20250407_201942'}, Final best pr_auc: 0.46648939907423137, Final best threshold: 0.34, Final best epoch: 7.0
+2025-04-07 21:12:50,567 - INFO - PRINT: ==================================================
+END CROSSVALIDATION
+==================================================
+2025-04-07 21:12:50,568 - INFO - PRINT: 
+BEGIN TRAIN AND EVALUATION FINAL MODEL
+
+2025-04-07 21:12:50,601 - INFO - PRINT: Users in train:{6, 9, 10, 11, 14, 15, 24, 28, 31}
+2025-04-07 21:12:50,602 - INFO - PRINT: Users in test:{16, 25, 26}
+2025-04-07 21:12:50,602 - INFO - PRINT: Number of windows for training:49695
+2025-04-07 21:12:50,602 - INFO - PRINT: Number of windows for testing:3970
+2025-04-07 21:12:50,834 - INFO - PRINT: Epoch 1 / 7
+2025-04-07 21:14:49,788 - INFO - PRINT: Epoch 2 / 7
+2025-04-07 21:16:46,866 - INFO - PRINT: Epoch 3 / 7
+2025-04-07 21:18:42,936 - INFO - PRINT: Epoch 4 / 7
+2025-04-07 21:20:39,400 - INFO - PRINT: Epoch 5 / 7
+2025-04-07 21:22:35,444 - INFO - PRINT: Epoch 6 / 7
+2025-04-07 21:24:31,592 - INFO - PRINT: Epoch 7 / 7
+2025-04-07 21:26:28,807 - INFO - PRINT: Training ROC-AUC: 0.5414, PR-AUC: 0.4863, Accuracy: 0.4906, Sober Accuracy: 0.0703, Drunk Accuracy: 0.9716, F1: 0.6402, Threshold: 0.3400
+2025-04-07 21:26:28,811 - INFO - PRINT: Test ROC-AUC: 0.6363, PR-AUC: 0.3966, Accuracy: 0.3491, Sober Accuracy: 0.0510, Drunk Accuracy: 0.9858, F1: 0.4913, Threshold: 0.3400
+2025-04-07 21:26:28,817 - INFO - PRINT: Model, predictions, ground truth, and metrics saved in results/HDC_statistical_v2/20250407_201942

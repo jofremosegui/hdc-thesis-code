@@ -1,0 +1,22 @@
+2025-05-17 10:20:16,152 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_LIGHTGBM/20250517_102016/training.log
+2025-05-17 10:20:18,797 - INFO - PRINT: Preparing sequences with undersampling...
+2025-05-17 10:20:23,807 - INFO - PRINT: Balancing sequences via undersampling...
+2025-05-17 10:20:27,094 - INFO - PRINT: Undersampled sequence shape: (75443, 800, 7)
+2025-05-17 10:20:27,574 - INFO - PRINT: Starting sequence preparation...
+2025-05-17 10:20:27,606 - INFO - PRINT: Processing 7 sessions...
+2025-05-17 10:20:27,987 - INFO - PRINT: Created 3958 sequences
+2025-05-17 10:20:27,987 - INFO - PRINT: Sequences shape: (3958, 800, 7)
+2025-05-17 10:20:39,954 - INFO - PRINT: Encoded 128/75443 sequences
+2025-05-17 10:20:48,215 - INFO - PRINT: Encoded 256/75443 sequences
+2025-05-17 10:20:56,538 - INFO - PRINT: Encoded 384/75443 sequences
+2025-05-17 10:21:04,510 - INFO - PRINT: Encoded 512/75443 sequences
+2025-05-17 10:21:12,424 - INFO - PRINT: Encoded 640/75443 sequences
+2025-05-17 10:21:20,371 - INFO - PRINT: Encoded 768/75443 sequences
+2025-05-17 10:21:28,423 - INFO - PRINT: Encoded 896/75443 sequences
+2025-05-17 10:21:36,345 - INFO - PRINT: Encoded 1024/75443 sequences
+2025-05-17 10:21:44,381 - INFO - PRINT: Encoded 1152/75443 sequences
+2025-05-17 10:21:52,456 - INFO - PRINT: Encoded 1280/75443 sequences
+2025-05-17 10:24:17,977 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-05-17 10:24:17,977 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-05-17 10:24:17,977 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py
+2025-05-17 10:24:17,985 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py

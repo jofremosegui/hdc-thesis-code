@@ -1,0 +1,80 @@
+2025-04-07 18:52:43,830 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/feature_engineering/statistical_features/results/HDC_statistical_v2/20250407_185243/training.log
+2025-04-07 18:52:43,830 - INFO - PRINT: Total configurations: 1
+2025-04-07 18:52:44,029 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-07 18:52:44,029 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 1, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_statistical_v2/20250407_185243'}
+
+2025-04-07 18:52:44,029 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-07 18:52:44,029 - INFO - PRINT: FOLD: 1
+2025-04-07 18:52:44,029 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-07 18:52:44,029 - INFO - PRINT: VAL: [11, 6]
+2025-04-07 18:52:44,281 - INFO - PRINT: Epoch 1 / 10
+2025-04-07 18:54:50,112 - INFO - PRINT: Epoch 2 / 10
+2025-04-07 18:56:54,504 - INFO - PRINT: Epoch 3 / 10
+2025-04-07 18:58:59,922 - INFO - PRINT: Epoch 4 / 10
+2025-04-07 19:01:03,233 - INFO - PRINT: Epoch 5 / 10
+2025-04-07 19:03:07,106 - INFO - PRINT: Epoch 6 / 10
+2025-04-07 19:05:11,431 - INFO - PRINT: Epoch 7 / 10
+2025-04-07 19:07:16,492 - INFO - PRINT: Epoch 8 / 10
+2025-04-07 19:09:22,427 - INFO - PRINT: Epoch 9 / 10
+2025-04-07 19:11:25,559 - INFO - PRINT: Epoch 10 / 10
+2025-04-07 19:13:32,780 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-07 19:13:32,780 - INFO - PRINT: FOLD: 2
+2025-04-07 19:13:32,780 - INFO - PRINT: TRAIN: [10, 11, 6, 31]
+2025-04-07 19:13:32,780 - INFO - PRINT: VAL: [9, 14, 15, 24, 28]
+2025-04-07 19:13:32,846 - INFO - PRINT: Epoch 1 / 10
+2025-04-07 19:14:04,922 - INFO - PRINT: Epoch 2 / 10
+2025-04-07 19:14:37,161 - INFO - PRINT: Epoch 3 / 10
+2025-04-07 19:15:09,384 - INFO - PRINT: Epoch 4 / 10
+2025-04-07 19:15:41,579 - INFO - PRINT: Epoch 5 / 10
+2025-04-07 19:16:13,728 - INFO - PRINT: Epoch 6 / 10
+2025-04-07 19:16:45,941 - INFO - PRINT: Epoch 7 / 10
+2025-04-07 19:17:18,170 - INFO - PRINT: Epoch 8 / 10
+2025-04-07 19:17:50,371 - INFO - PRINT: Epoch 9 / 10
+2025-04-07 19:18:22,578 - INFO - PRINT: Epoch 10 / 10
+2025-04-07 19:18:55,632 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-07 19:18:55,632 - INFO - PRINT: FOLD: 3
+2025-04-07 19:18:55,632 - INFO - PRINT: TRAIN: [6, 9, 11, 14, 15, 24, 28]
+2025-04-07 19:18:55,632 - INFO - PRINT: VAL: [10, 31]
+2025-04-07 19:18:55,832 - INFO - PRINT: Epoch 1 / 10
+2025-04-07 19:20:43,261 - INFO - PRINT: Epoch 2 / 10
+2025-04-07 19:22:30,994 - INFO - PRINT: Epoch 3 / 10
+2025-04-07 19:24:18,651 - INFO - PRINT: Epoch 4 / 10
+2025-04-07 19:26:06,245 - INFO - PRINT: Epoch 5 / 10
+2025-04-07 19:27:54,602 - INFO - PRINT: Epoch 6 / 10
+2025-04-07 19:29:40,957 - INFO - PRINT: Epoch 7 / 10
+2025-04-07 19:31:29,057 - INFO - PRINT: Epoch 8 / 10
+2025-04-07 19:33:18,074 - INFO - PRINT: Epoch 9 / 10
+2025-04-07 19:35:05,460 - INFO - PRINT: Epoch 10 / 10
+2025-04-07 19:36:52,808 - INFO - PRINT: Validation ROC-AUC: 0.4997, PR-AUC: 0.5335, Accuracy: 0.5337, Sober Accuracy: 0.0000, Drunk Accuracy: 1.0000, F1: 0.6959, Threshold: 0.0100
+2025-04-07 19:36:52,809 - INFO - PRINT: Updated best config: {'device': 'mps', 'window_size': 1, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_statistical_v2/20250407_185243'}, PR-AUC: 0.5335, Threshold: 0.0100, Epoch: 10.00
+2025-04-07 19:36:52,809 - INFO - PRINT: ==================================================
+2025-04-07 19:36:52,809 - INFO - PRINT: Final best config: {'device': 'mps', 'window_size': 1, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 10, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_statistical_v2/20250407_185243'}, Final best pr_auc: 0.533506660308177, Final best threshold: 0.01, Final best epoch: 10.0
+2025-04-07 19:36:52,809 - INFO - PRINT: ==================================================
+END CROSSVALIDATION
+==================================================
+2025-04-07 19:36:52,809 - INFO - PRINT: 
+BEGIN TRAIN AND EVALUATION FINAL MODEL
+
+2025-04-07 19:36:52,845 - INFO - PRINT: Users in train:{6, 9, 10, 11, 14, 15, 24, 28, 31}
+2025-04-07 19:36:52,846 - INFO - PRINT: Users in test:{16, 25, 26}
+2025-04-07 19:36:52,846 - INFO - PRINT: Number of windows for training:49695
+2025-04-07 19:36:52,846 - INFO - PRINT: Number of windows for testing:3970
+2025-04-07 19:36:53,076 - INFO - PRINT: Epoch 1 / 10
+2025-04-07 19:38:54,880 - INFO - PRINT: Epoch 2 / 10
+2025-04-07 19:40:52,971 - INFO - PRINT: Epoch 3 / 10
+2025-04-07 19:42:54,257 - INFO - PRINT: Epoch 4 / 10
+2025-04-07 19:44:51,515 - INFO - PRINT: Epoch 5 / 10
+2025-04-07 19:47:06,554 - INFO - PRINT: Epoch 6 / 10
+2025-04-07 19:49:03,370 - INFO - PRINT: Epoch 7 / 10
+2025-04-07 19:51:08,143 - INFO - PRINT: Epoch 8 / 10
+2025-04-07 19:53:23,532 - INFO - PRINT: Epoch 9 / 10
+2025-04-07 19:55:42,195 - INFO - PRINT: Epoch 10 / 10
+2025-04-07 19:57:59,032 - INFO - PRINT: Training ROC-AUC: 0.6452, PR-AUC: 0.6580, Accuracy: 0.5342, Sober Accuracy: 0.0019, Drunk Accuracy: 0.9993, F1: 0.6960, Threshold: 0.0100
+2025-04-07 19:57:59,035 - INFO - PRINT: Test ROC-AUC: 0.5782, PR-AUC: 0.7436, Accuracy: 0.6660, Sober Accuracy: 0.0000, Drunk Accuracy: 0.9992, F1: 0.7995, Threshold: 0.0100
+2025-04-07 19:57:59,040 - INFO - PRINT: Model, predictions, ground truth, and metrics saved in results/HDC_statistical_v2/20250407_185243
+2025-04-07 20:19:42,066 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-04-07 20:19:42,066 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-04-07 20:19:42,066 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py

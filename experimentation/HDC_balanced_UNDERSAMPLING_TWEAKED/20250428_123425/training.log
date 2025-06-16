@@ -1,0 +1,26 @@
+2025-04-28 12:34:25,268 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/data_balancing/results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250428_123425/training.log
+2025-04-28 12:34:25,268 - INFO - PRINT: Total configurations: 1
+2025-04-28 12:34:49,752 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-28 12:34:49,752 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 800, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_balanced_UNDERSAMPLING_TWEAKED/20250428_123425'}
+
+2025-04-28 12:34:49,752 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-28 12:34:49,753 - INFO - PRINT: FOLD: 1
+2025-04-28 12:34:49,753 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-28 12:34:49,753 - INFO - PRINT: VAL: [11, 6]
+2025-04-28 12:34:51,367 - INFO - PRINT: Preparing sequences...
+2025-04-28 12:34:52,593 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-28 12:34:57,467 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-28 12:35:01,291 - INFO - PRINT: Undersampled sequence shape: (69436, 800, 7)
+2025-04-28 12:35:01,493 - INFO - PRINT: Preparing sequences with undersampling...
+2025-04-28 12:35:01,837 - INFO - PRINT: Balancing sequences via undersampling...
+2025-04-28 12:35:01,928 - INFO - PRINT: Undersampled sequence shape: (3957, 800, 7)
+2025-04-28 12:35:02,520 - INFO - PRINT: Users in train:{9, 10, 14, 15, 24, 28, 31}
+2025-04-28 12:35:02,559 - INFO - PRINT: Users in test:{11, 6}
+2025-04-28 12:35:02,559 - INFO - PRINT: Number of windows for training:69436
+2025-04-28 12:35:02,559 - INFO - PRINT: Number of windows for testing:3957
+2025-04-28 12:35:02,853 - INFO - PRINT: Epoch | Train Loss |  Val Loss  |  Val PR-AUC  |  Val ROC-AUC  |  Epoch Time (s)
+2025-04-28 12:35:02,853 - INFO - PRINT: -------------------------------------------------------------------------------------
+2025-04-28 13:27:11,393 - INFO - PRINT:     1 | 1.046951 | 0.957678 | 0.8778 | 0.8318 | 3112.05

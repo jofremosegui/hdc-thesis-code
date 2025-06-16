@@ -1,0 +1,15 @@
+2025-04-07 13:54:28,726 - INFO - Logging initialized to /Users/jofremosegui/Desktop/TFG/wearbac_experiments/models/feature_engineering/statistical_features/results/HDC_statistical_v2/20250407_135428/training.log
+2025-04-07 13:54:28,726 - INFO - PRINT: Total configurations: 1
+2025-04-07 13:54:28,902 - INFO - PRINT: ==================================================
+BEGIN CROSSVALIDATION
+==================================================
+2025-04-07 13:54:28,902 - INFO - PRINT: 
+CONFIG 0: {'device': 'mps', 'window_size': 1, 'ngrams': 7, 'hdc_dimension': 5000, 'batch_size': 64, 'learning_rate': 2, 'epochs': 10, 'patience': 5, 'overlap_ratio': 0.5, 'runtime_log_fld': 'results/HDC_statistical_v2/20250407_135428'}
+
+2025-04-07 13:54:28,902 - INFO - PRINT: ----------------------------------------------------------------------------------------------------
+2025-04-07 13:54:28,902 - INFO - PRINT: FOLD: 1
+2025-04-07 13:54:28,902 - INFO - PRINT: TRAIN: [9, 10, 14, 15, 24, 28, 31]
+2025-04-07 13:54:28,902 - INFO - PRINT: VAL: [11, 6]
+2025-04-07 13:55:54,053 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/__init__.py
+2025-04-07 13:55:54,053 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/embeddings.py
+2025-04-07 13:55:54,053 - INFO - PRINT: /Users/jofremosegui/Desktop/TFG/wearbac_experiments/torchhd/torchhd/models.py
